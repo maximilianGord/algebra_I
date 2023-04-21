@@ -19,7 +19,7 @@
 \setlength{\parindent}{0mm} % no paragraph indentation
 
 % Theorems
-\newtheorem{thm}{Theorem}
+\newtheorem{thm}{Theorem}[section]
 \tcolorboxenvironment{thm}{
   colback=blue!15!,
   boxrule=0pt,
@@ -64,17 +64,6 @@
   after skip=\topsep,
 }
 \newtheorem{defin}[thm]{Definition}
-\tcolorboxenvironment{def}{
-  colback=black!15!,
-  boxrule=0pt,
-  boxsep=1pt,
-  left=2pt,right=2pt,top=2pt,bottom=2pt,
-  oversize=2pt,
-  sharp corners,
-  before skip=\topsep,
-  after skip=\topsep,
-}
-\newtheorem{pr}[thm]{Proof}
 \tcolorboxenvironment{def}{
   colback=black!15!,
   boxrule=0pt,
@@ -274,7 +263,7 @@
 \bigskip\bigskip 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{LateX Beispiele}
+\section{LateX Beispiele}
 
 $A, \bA,\cA,\fA, \sA $
 
@@ -284,5 +273,9 @@ $ a, \mathcal{a}, \mathfrak{a} \mathscr{a}$
   Satz von Gauß $ a=n $
 \end{thm}
 $ \overset{\text{}}{\rightarrow } $
+\section{The real shit}
+\begin{thm}[Satz von Euler]
+  Satz von Euler $ \int\limits_{0}^{\infty}d $
+\end{thm}
 
 \end{document}
